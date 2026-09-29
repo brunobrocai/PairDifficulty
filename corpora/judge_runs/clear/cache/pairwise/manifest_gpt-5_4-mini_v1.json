@@ -1,0 +1,24 @@
+{
+  "judge": "gpt-5.4-mini",
+  "method": "pairwise_soft",
+  "prompt_version": "v1",
+  "prompt_hash": "90ca522aae9a3b12f56479c667509d5a9f739d3b4f967cdfbc1d499472354f36",
+  "regime": "",
+  "sample_seed": 42,
+  "master_seed": 42,
+  "temperature": 0.0,
+  "reasoning_effort": "none",
+  "n": 200,
+  "uids_head": [
+    "6471",
+    "2874",
+    "3808",
+    "3894",
+    "1516"
+  ],
+  "n_uids_total": 200,
+  "budget": 1200,
+  "soft_x": 64.0,
+  "effective_degree": 12.0,
+  "swap_augmented": true
+}

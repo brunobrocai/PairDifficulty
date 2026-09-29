@@ -1,0 +1,22 @@
+\begin{tabular}{llcccccccc}
+  \toprule
+  & & \multicolumn{3}{c}{Consistency ($1-$flip)} & IPP & \multicolumn{3}{c}{\% non-transitive triads} & \\
+  \cmidrule(lr){3-5}\cmidrule(lr){7-9}
+  & Judge & all & close & far & all & cyc & mix & ineq & $\rho$ \\
+  & & & (Q1 gap) & (Q4 gap) & & & & & \\
+  \midrule
+  \multirow{6}{*}{\rotatebox[origin=c]{90}{CLEAR}} & GPT-5.4-nano     & .78 & .72 & .90 & .61 & 0.0 & 0.8 & 9.9 & $+0.691$ \\
+   & GPT-5.4-mini     & .80 & .66 & .96 & .97 & 0.0 & 0.4 & 9.5 & $+0.825$ \\
+   & Ministral-3-3B   & .79 & .70 & .92 & .89 & 0.0 & 0.4 & 6.2 & $+0.755$ \\
+   & Ministral-3-14B  & .84 & .73 & .97 & .89 & 0.0 & 0.8 & 4.1 & $+0.788$ \\
+   & Gemma-3-4B       & .22 & .09 & .46 & 1.00 & 0.0 & 0.0 & 27.2 & $+0.676$ \\
+   & Gemma-3-12B      & .76 & .57 & .96 & .99 & 0.0 & 0.0 & 7.8 & $+0.830$ \\
+  \midrule
+  \multirow{6}{*}{\rotatebox[origin=c]{90}{ASAP}} & GPT-5.4-nano     & .79 & .74 & .85 & .21 & 0.0 & 4.9 & 10.7 & $+0.677$ \\
+   & GPT-5.4-mini     & .73 & .62 & .84 & .03 & 0.0 & 0.0 & 13.8 & $+0.674$ \\
+   & Ministral-3-3B   & .78 & .65 & .94 & .02 & 0.0 & 0.4 & 7.1 & $+0.726$ \\
+   & Ministral-3-14B  & .83 & .77 & .94 & .02 & 0.0 & 0.0 & 3.6 & $+0.690$ \\
+   & Gemma-3-4B       & .34 & .19 & .53 & 1.00 & 0.0 & 0.0 & 29.3 & $+0.668$ \\
+   & Gemma-3-12B      & .84 & .78 & .95 & .86 & 0.0 & 0.9 & 4.9 & $+0.735$ \\
+  \bottomrule
+\end{tabular}

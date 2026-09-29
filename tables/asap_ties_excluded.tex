@@ -1,0 +1,16 @@
+\begin{tabular}{lccccc}
+  \toprule
+  & \multicolumn{3}{c}{Consistency ($1-$flip)} & \multicolumn{2}{c}{$\rho$ vs gold} \\
+  \cmidrule(lr){2-4}\cmidrule(lr){5-6}
+  Judge & close & close & far & all & tied \\
+  & (gap $=0$) & (gap $=1$) & (gap $\geq 2$) & verdicts & excluded \\
+  & 28.2\% & 44.9\% & 26.8\% & & \\
+  \midrule
+  GPT-5.4-nano     & .74 & .78 & .85 & $+0.677$ & $+0.735$ \\
+  GPT-5.4-mini     & .62 & .73 & .84 & $+0.674$ & $+0.726$ \\
+  Ministral-3-3B   & .65 & .76 & .94 & $+0.726$ & $+0.786$ \\
+  Ministral-3-14B  & .77 & .80 & .94 & $+0.690$ & $+0.753$ \\
+  Gemma-3-4B       & .19 & .32 & .53 & $+0.668$ & $+0.678$ \\
+  Gemma-3-12B      & .78 & .81 & .95 & $+0.735$ & $+0.797$ \\
+  \bottomrule
+\end{tabular}

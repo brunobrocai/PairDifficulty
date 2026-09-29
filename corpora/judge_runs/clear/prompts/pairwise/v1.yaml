@@ -1,0 +1,33 @@
+# CLEAR — pairwise v1 (final eval). Construct = READABILITY EASE.
+# Wording mirrors the human annotation protocol the BT_easiness gold was
+# collected under: a teacher picking which of two texts is easier for
+# students to understand. Deliberately minimal — no rubric. Binary A/B
+# (swap-calibrated by the runner). Self-contained. IMMUTABLE once a cache
+# exists (feedback_prompts_immutable): bump to v2 + a new file to change wording.
+
+sysprompt: |-
+  You are a school teacher.
+
+userprompt: |-
+  Which text is easier for students to understand?
+
+  Text A:
+  {text_a}
+
+  -----
+  Text B:
+  {text_b}
+
+  -----
+  Answer with a JSON object {"verdict": "A"} if Text A is easier, or {"verdict": "B"} if Text B is easier. You must pick one.
+
+extra:
+  schema:
+    type: object
+    properties:
+      verdict:
+        type: string
+        enum: [A, B]
+    required: [verdict]
+  schema_name: ClearPairwiseVerdict
+  response_field: verdict
